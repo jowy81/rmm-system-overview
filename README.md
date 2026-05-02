@@ -1,5 +1,8 @@
 # RMM System
 
+![Production](https://img.shields.io/badge/Production-Usage-success?style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-RMM-111111?style=for-the-badge)
+
 Remote Monitoring and Management stack for **Linux servers**: a lightweight **agent** on each host and a central **backend API** with a relational database. The workspace is split into focused repositories (agent, backend, compose stack, documentation).
 
 Built and maintained as part of real-world infrastructure and production environments.
@@ -37,6 +40,12 @@ Teams need **real** remote monitoring, remediation, and automation on **Linux se
 - **Orchestration** — Docker Compose definitions for running the backend and dependencies (private repo); used alongside production agent rollout patterns.
 - **Documentation** — Separate documentation repository for deployment, testing, and feature matrices.
 - **Operations model** — Control plane is **API-centric**: fleet state, jobs, and checks are driven through the backend; any additional operator tooling stays private.
+
+## Architecture Diagram
+
+High-level agent-to-control-plane flow (conceptual; not a network diagram).
+
+![Architecture Diagram](./assets/architecture.svg)
 
 ## Tech Stack
 
